@@ -1,7 +1,7 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "weaponsmod:item/iron_wand1"
+    "layer0": "weaponsmod:item/weapon_mk2"
   },
   "display": {
     "thirdperson_righthand": {

@@ -18,9 +18,16 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(WeaponsMod.MOD_ID);
 
+    //注册方块
     public static final DeferredBlock<Block> TEST = registerBlock("test",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+                    .strength(50)
+                    .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> HELL_BLOCK = registerBlock("hell_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(50)
+                    .requiresCorrectToolForDrops()));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -1,6 +1,7 @@
 package com.qcknh668.weaponsmod;
 
 import com.qcknh668.weaponsmod.block.ModBlocks;
+import com.qcknh668.weaponsmod.item.ModCreativeModeTabs;
 import com.qcknh668.weaponsmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -35,6 +36,8 @@ public class WeaponsMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -52,13 +55,13 @@ public class WeaponsMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
-            event.accept(ModItems.IRON_WAND1);
+
         };
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.IRON_STICK);
+
         };
-        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
-            event.accept(ModBlocks.TEST);
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+
         }
     }
 

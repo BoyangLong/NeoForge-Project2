@@ -1,5 +1,13 @@
 {
-    "item.weaponsmod.iron_wand1":"幽冥棱光·雏形",
+    "creativetab.weaponsmod.moditems": "野生的武器·物品",
+    "creativetab.weaponsmod.modblocks":"野生的武器·方块",
+
+    "item.weaponsmod.weapon_mk1": "幽冥棱光·I阶",
+    "item.weaponsmod.weapon_mk2": "幽冥棱光·II阶",
     "item.weaponsmod.iron_stick":"铁棍",
-    "block.weaponsmod.test":"测试"
+    "item.weaponsmod.hell_pickaxe": "幽冥镐",
+    "item.weaponsmod.hell_ingot": "幽冥锭",
+
+    "block.weaponsmod.test":"测试",
+    "block.weaponsmod.hell_block": "幽冥块"
 }

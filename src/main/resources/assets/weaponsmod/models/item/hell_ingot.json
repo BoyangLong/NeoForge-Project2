@@ -1,6 +1,6 @@
 {
-  "parent": "item/handheld",
+  "parent": "item/generated",
   "textures": {
-    "layer0": "weaponsmod:item/iron_stick"
+    "layer0": "weaponsmod:item/hell_ingot"
   }
 }
